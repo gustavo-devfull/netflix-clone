@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+    --cinza: #f2f2f2;
+}
+
+body {
+    background-color: var(--preta);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cinza);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.logo {
+    margin: 20px 50px 20px 0px;
+    width: 150px;
+    
+}
+/* header .logo-netflix {
+    width: 150px;
+    color: var(--vermelho);
+    font-size: 40px;
+    
+} */
+
+header nav a {
+    color: var(--cinza);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: var(--vermelho);
+}
+
+
+.container{
+    margin-left: 50px;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 32px;
+    background: linear-gradient(rgba(0, 0, 0, 0.20), #141414), url(/img/capa-house.jpg);
+    height: 80vh;
+    background-size: cover;
+
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    width: 50%;
+}
+
+
+.botoes {
+    margin-top: 5%;
+
+}
+
+.botao {
+    background-color: var(--preta);
+    color: var(--cinza);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.botao:hover {
+    background-color: var(--vermelho);
+    color: var(--cinza);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+.botao i {
+    margin-right: 5px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin: 15px;
+}
